@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #91F291;
+  --secondary-color: #766F68;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo, .reiniciar {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.reiniciar {
+  color: black;
+  padding: 10px;
+  background-color: #91F291;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px 0 rgba(145,242,145, .9);
+  cursor: pointer;
+}
+
+.reiniciar:hover {
+  padding: 11px;
+}
+
+.container {
+  margin-top: 60px
+}
+
+.container h1 {
+ text-align: center;
+ color: white;
+ opacity: 0.4;
+ font-size: 5rem;
+}
+
+.timer {
+  font-size: 62px;
+}
+
+.contador {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-top: 100px;
+}
+
+.count {
+  text-align: center;
+  font-size: 32px;
+}
+
+.count p {
+  color: #91F291;
+}
+
+@media screen and (max-width: 767px) {
+  .numbers {
+    font-size: 3rem;
+  }
+  .container {
+    margin-top: 60px
+  }
+}
